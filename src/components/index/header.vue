@@ -88,7 +88,7 @@
             <el-menu-item index="4-2">动态</el-menu-item>
             <el-menu-item index="4-3">立项</el-menu-item>
           </el-submenu>
-          <el-menu-item style="width: 190px" index="5">党建文化</el-menu-item>
+          <el-menu-item style="width: 190px" index="5" href="javascript:;" @click="goParty()">党建文化</el-menu-item>
         </el-menu>
       </ul>
     </div>
@@ -112,6 +112,10 @@ export default {
     },
     goDesc() {
       let routeData = this.$router.resolve({ path: "/icenter/desc" });
+      window.open(routeData.href, "_blank");
+    },
+    goParty() {
+      let routeData = this.$router.resolve({ path: "/icenter/party" });
       window.open(routeData.href, "_blank");
     },
   },
