@@ -53,14 +53,19 @@ const routes = [
         name:"Video",
       },
       {
-        path: '/icenter/desc', // 视频
+        path: '/icenter/desc', // 中心概况
         component: () => import('../views/desc.vue'),
         name:"Desc",
       },
       {
-        path: '/icenter/party', // 视频
+        path: '/icenter/party', // 党建文化
         component: () => import('../views/party.vue'),
         name:"Party",
+      },
+      {
+        path: '/icenter/regs', // 政策标准
+        component: () => import('../views/regs.vue'),
+        name:"Regs",
       }
     ]
   }

@@ -84,7 +84,7 @@
           <el-menu-item style="width: 190px" index="3" href="javascript:;" @click="goProdlist()">业务范围</el-menu-item>
           <el-submenu style="width: 190px" index="4">
             <template slot="title">政策标准</template>
-            <el-menu-item index="4-1">标准公告</el-menu-item>
+            <el-menu-item index="4-1" href="javascript:;" @click="goRegs()">标准公告</el-menu-item>
             <el-menu-item index="4-2">动态</el-menu-item>
             <el-menu-item index="4-3">立项</el-menu-item>
           </el-submenu>
@@ -116,6 +116,10 @@ export default {
     },
     goParty() {
       let routeData = this.$router.resolve({ path: "/icenter/party" });
+      window.open(routeData.href, "_blank");
+    },
+    goRegs() {
+      let routeData = this.$router.resolve({ path: "/icenter/regs" });
       window.open(routeData.href, "_blank");
     },
   },

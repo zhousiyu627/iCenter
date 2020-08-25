@@ -62,7 +62,7 @@ div{
 }
 ul {
   padding-left: 2em;
-  margin: 1.5em 0 0.214286em;
+  margin: 1em 0 1.214286em;
 }
 li {
   text-align: -webkit-match-parent;

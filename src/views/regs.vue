@@ -1,10 +1,11 @@
 <template>
-  <div class="party">
+  <div class="regs">
     <div class="templateContainer">
       <div class="breadCrumb">
         <el-breadcrumb separator-class="el-icon-arrow-right">
           <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
-          <el-breadcrumb-item>党建文化</el-breadcrumb-item>
+          <el-breadcrumb-item :to="{ path: '#' }">政策标准</el-breadcrumb-item>
+          <el-breadcrumb-item>标准公告</el-breadcrumb-item>
         </el-breadcrumb>
       </div>
       <div class="twocolumns">
@@ -12,34 +13,34 @@
           <div class="newslist">
             <ul>
               <li style="list-style-type:disc">
-                <a href="">中国航协党委组织党员赴国航参观学习</a>
+                <a href="">轻小型无人机技术标准（UTC）驾驶员培训考核体系基本要求</a>
               </li>
               <li style="list-style-type:disc">
-                <a href="">中国航协举办军民融合深度发展专题讲座</a>
+                <a href="">航空食品企业航机员操作规范</a>
               </li>
               <li style="list-style-type:disc">
-                <a href="">中国航协党委和纪委正式成立</a>
+                <a href="">国内航线航空邮件收入结算办法</a>
               </li>
               <li style="list-style-type:disc">
-                <a href="">中国航协召开传达学习贯彻党的十九大精神动员部署会议</a>
+                <a href="">中国境内始发航线逾重行李票证结算办法</a>
               </li>
               <li style="list-style-type:disc">
-                <a href="">中国航协深入开展“两学一做”学习教育——民航局张冲峰主任讲专题党课</a>
+                <a href="">航空运输客运销售代理人业务规范</a>
               </li>
               <li style="list-style-type:disc">
-                <a href="">中国航协党委组织党员赴国航参观学习</a>
+                <a href="">航空运输货运销售代理人业务规范</a>
               </li>
               <li style="list-style-type:disc">
-                <a href="">中国航协举办军民融合深度发展专题讲座</a>
+                <a href="">食品安全国家标准 航空食品卫生规范</a>
               </li>
               <li style="list-style-type:disc">
-                <a href="">中国航协党委和纪委正式成立</a>
+                <a href="">货物航空冷链运输规范</a>
               </li>
               <li style="list-style-type:disc">
-                <a href="">中国航协召开传达学习贯彻党的十九大精神动员部署会议</a>
+                <a href="">航空客运销售代理人服务规范</a>
               </li>
               <li style="list-style-type:disc">
-                <a href="">中国航协深入开展“两学一做”学习教育——民航局张冲峰主任讲专题党课</a>
+                <a href="">航空货运销售代理人服务规范</a>
               </li>
             </ul>
           </div>
@@ -47,7 +48,15 @@
           <div class="sidebar">
             <ul>
               <li class="nav-item">
-                <a href="#" class="nav-link">党建文化
+                <a href="#" class="nav-link">标准公告
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">动态
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">立项
                 </a>
               </li>
             </ul>
@@ -75,7 +84,6 @@ div {
 .twocolumns {
   align-items: flex-start;
   display: grid;
-  /* grid-template-columns: 81.36% 18.64%; */
   grid-template-columns: 720px 220px;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -87,7 +95,7 @@ div {
 }
 ul {
   padding-left: 2em;
-  margin: 1em 0 1.214286em;
+  margin: 1rem 0 1.214286em;
 }
 li {
   text-align: -webkit-match-parent;
@@ -98,24 +106,12 @@ a {
   text-decoration: none;
   transition: color 0.2s linear;
 }
-.box > h2 {
-  margin-bottom: 0;
-  margin-top: 0;
-}
-.box h2 {
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-}
 .news {
   width: 720px;
   float: left;
   overflow: hidden;
   margin-top: 16px;
   padding: 0;
-}
-h2 {
-  line-height: 1;
-  margin: 1.5em 0 0.214286em;
 }
 .breadCrumb {
   /* border-bottom: 1px solid #ededed; */
@@ -126,10 +122,6 @@ h2 {
 }
 .sidebar{
     margin:-1rem;
-}
-
-.news > h2 {
-  margin-top: 1rem;
 }
 .newslist > ul li {
   padding: 7px 0;
