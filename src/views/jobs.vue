@@ -114,7 +114,7 @@ export default {
   },
 };
 </script>
-<style scope>
+<style scoped>
 ul {
   padding-left: 2em;
   margin: 1.5em 0 0.214286em;

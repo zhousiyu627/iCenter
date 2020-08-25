@@ -116,7 +116,7 @@ export default {
   }
 };
 </script>
-<style>
+<style scoped>
 .templateContainer {
   margin: 0 auto;
   max-width: 960px;

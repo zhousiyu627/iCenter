@@ -11,7 +11,7 @@
 <script>
 
 </script>
-<style scope>
+<style scoped>
 .templateContainer {
   margin: 0 auto;
   max-width: 960px;
