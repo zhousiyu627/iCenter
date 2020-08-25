@@ -32,7 +32,7 @@
         <div class="nav2">
           <ul class="topnav">
             <li>
-              <a href="/">信息中心主页</a>
+              <a href="/">主页</a>
             </li>
             <li>
               <a href="javascript:;" @click="goNews()">近期新闻</a>
@@ -69,18 +69,16 @@
           font-size="1rem"
         >
           <el-submenu style="width: 200px" index="1">
-            <template slot="title">中心概况</template>
-            <el-menu-item index="1-1">中心简介</el-menu-item>
+            <template slot="title" href="javascript:;" @click="goDesc()">中心概况</template>
+            <el-menu-item index="1-1" href="javascript:;" @click="goDesc()">中心简介</el-menu-item>
             <el-submenu index="1-2">
-              <template slot="title">领导团体</template>
+              <template slot="title">部门组织</template>
               <el-menu-item index="1-2-1">部门1</el-menu-item>
               <el-menu-item index="1-2-2">部门2</el-menu-item>
               <el-menu-item index="1-2-3">部门3</el-menu-item>
             </el-submenu>
-            <el-menu-item index="1-3">部门1</el-menu-item>
-            <el-menu-item index="1-3">部门2</el-menu-item>
-            <el-menu-item index="1-3">部门3</el-menu-item>
-            <el-menu-item index="1-3">部门4</el-menu-item>
+            <el-menu-item index="1-3">资源中心</el-menu-item>
+            <el-menu-item index="1-4">员工动态</el-menu-item>
           </el-submenu>
           <el-menu-item style="width: 190px" index="2" href="javascript:;" @click="goNews()">新闻中心</el-menu-item>
           <el-menu-item style="width: 190px" index="3" href="javascript:;" @click="goProdlist()">业务范围</el-menu-item>
@@ -110,6 +108,10 @@ export default {
     },
     goProdlist() {
       let routeData = this.$router.resolve({ path: "/icenter/prodlist" });
+      window.open(routeData.href, "_blank");
+    },
+    goDesc() {
+      let routeData = this.$router.resolve({ path: "/icenter/desc" });
       window.open(routeData.href, "_blank");
     },
   },

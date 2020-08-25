@@ -51,6 +51,11 @@ const routes = [
         path: '/icenter/video', // 视频
         component: () => import('../views/video.vue'),
         name:"Video",
+      },
+      {
+        path: '/icenter/desc', // 视频
+        component: () => import('../views/desc.vue'),
+        name:"Desc",
       }
     ]
   }
