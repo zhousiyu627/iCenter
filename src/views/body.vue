@@ -143,7 +143,7 @@
                     </a>
                   </li>
                   <li>
-                    <a class="videob" href="/"></a>
+                    <a class="videob" href="javascript:;" @click="goVideo()"></a>
                   </li>
                   <li>
                     <a class="videoc" href="/"></a>
@@ -268,6 +268,10 @@ export default {
   methods: {
     goProduct() {
       let routeData = this.$router.resolve({ path: "/icenter/product" });
+      window.open(routeData.href, "_blank");
+    },
+    goVideo() {
+      let routeData = this.$router.resolve({ path: "/icenter/video" });
       window.open(routeData.href, "_blank");
     },
   },
