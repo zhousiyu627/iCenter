@@ -26,7 +26,7 @@
     <div class="header2">
       <ul class="w">
         <div class="logo2" href="/">
-          <img alt src="../../assets/image/logotext.png" height="50px" />
+          <img alt src="../../assets/image/caaciclogo.png" height="200px" />
           <!-- <span>民航局信息中心</span> -->
         </div>
         <div class="nav2">
@@ -38,7 +38,7 @@
               <a href="javascript:;" @click="goNews()">近期新闻</a>
             </li>
             <li>
-              <a href="/">关于中心</a>
+              <a href="javascript:;" @click="goDesc()">关于中心</a>
             </li>
             <li>
               <a href="javascript:;" @click="goJobs()">人才招聘</a>
@@ -236,7 +236,7 @@ li ol {
   align-items: center;
   display: flex;
   /* padding: -2rem; */
-  margin-left: -9rem;
+  margin-left: -14rem;
   width: 251px;
   height: 110px;
   float: left;
