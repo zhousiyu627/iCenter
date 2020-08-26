@@ -5,7 +5,7 @@
         <li>
           <!-- logo part -->
           <a href="http://www.caac.gov.cn/index.html">
-            <img src="../../assets/image/caac.png" height="16px" />中国民用航空局
+            <img src="../../assets/image/caaclogo.png" height="16px" />中国民用航空局
           </a>
           <div class="topbar">
             <ul>

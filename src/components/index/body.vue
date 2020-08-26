@@ -1,6 +1,6 @@
 <template>
   <div class="body">
-    <div class="templateContainer noSidebars">
+    <!-- <div class="templateContainer noSidebars">
       <main id="mainColumn" class="mainColumn">
         <article id="content" class="content">
           <div class="twoColumn">
@@ -148,15 +148,11 @@
                   <li>
                     <a class="videoc" href="/"></a>
                   </li>
-                  <!-- <li>
-                    <a class="videod" href="/"></a>
-                  </li> -->
                 </ul>
               </div>
             </div>
             <div>
               <div class="boss" style="float:left; width:220px;">
-                <!-- background-color: rgb(237, 246, 255) -->
                 <div
                   style="min-height:300px;padding-left:10px;padding-bottom:10px;background-color: rgb(237, 246, 255);"
                 >
@@ -255,18 +251,16 @@
           <footer></footer>
         </article>
       </main>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.templateContainer {
+/* .templateContainer {
   margin: 0 auto;
   max-width: 960px;
-  /* padding: 0 1%; */
 }
 ul {
   padding-left: 2em;
@@ -314,7 +308,6 @@ article {
 .twoColumn {
   align-items: flex-start;
   display: grid;
-  /* grid-template-columns: 81.36% 18.64%; */
   grid-template-columns: 720px 220px;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -334,9 +327,6 @@ article {
   margin: 24px 0;
   padding: 1em 0;
 }
-/* .el-carousel__item{
-    height:410px;
-} */
 .el-carousel__item h3 {
   color: #475669;
   font-size: 14px;
@@ -434,5 +424,5 @@ min-height: 5em;
 }
 .card{
   padding-top:1rem;
-}
+} */
 </style>

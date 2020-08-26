@@ -9,16 +9,16 @@
                 <div class="block">
                   <el-carousel height="360px">
                     <el-carousel-item>
-                      <img src="../assets/image/video1.png" height="360px" width="720px" />
+                      <img src="../assets/image/zmd1.jpg" height="360px" width="720px" />
                     </el-carousel-item>
                     <el-carousel-item>
-                      <img src="../assets/image/video2.png" height="360px" width="720px" />
+                      <img src="../assets/image/zmd2.jpg" height="360px" width="720px" />
                     </el-carousel-item>
                     <el-carousel-item>
-                      <img src="../assets/image/video3.png" height="360px" width="720px" />
+                      <img src="../assets/image/zmd3.jpg" height="360px" width="720px" />
                     </el-carousel-item>
                     <el-carousel-item>
-                      <img src="../assets/image/video4.png" height="360px" width="720px" />
+                      <img src="../assets/image/zmd4.jpg" height="360px" width="720px" />
                     </el-carousel-item>
                   </el-carousel>
                 </div>
@@ -201,13 +201,12 @@
                 <div class="card">
                   <el-card :body-style="{ padding: '5px 0' }">
                     <img
-                      src="../assets/image/product1.png"
+                      src="../assets/image/hlzh.png"
                       class="image"
                       height="100px"
-                      width="220px"
                     />
                     <div style="padding: 14px;">
-                      <span>机场APP</span>
+                      <span>航旅纵横</span>
                       <div class="bottom clearfix">
                         <time class="time">{{ currentDate }}</time>
                         <el-button
@@ -223,13 +222,12 @@
                 <div class="card">
                   <el-card :body-style="{ padding: '5px 0' }">
                     <img
-                      src="../assets/image/product2.png"
+                      src="../assets/image/mhzf.png"
                       class="image"
                       height="100px"
-                      width="220px"
                     />
                     <div style="padding: 14px;">
-                      <span>飞行模拟器</span>
+                      <span>民航直飞</span>
                       <div class="bottom clearfix">
                         <time class="time">{{ currentDate }}</time>
                         <el-button type="text" class="button">详细信息</el-button>
@@ -240,13 +238,12 @@
                 <div class="card">
                   <el-card :body-style="{ padding: '5px 0' }">
                     <img
-                      src="../assets/image/product3.png"
+                      src="../assets/image/zggh.png"
                       class="image"
                       height="100px"
-                      width="220px"
                     />
                     <div style="padding: 14px;">
-                      <span>民航职称评审系统</span>
+                      <span>中国国航</span>
                       <div class="bottom clearfix">
                         <time class="time">{{ currentDate }}</time>
                         <el-button type="text" class="button">详细信息</el-button>
